@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camiones y Maquinarias Hermanos Ventura</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="img/image.jpg" alt="Logo de Camiones y Maquinarias Hermanos Ventura" class="logo">
+            <h1>Camiones y Maquinarias Hermanos Ventura</h1>
+            <nav>
+                <ul>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="productos">
+            <div class="container">
+                <h2>Maquinarias</h2>
+                <div class="producto" id="producto1">
+                    <img src="img/volquete/1.jpeg" alt="Camión Volquete Shacman X3000" class="producto-img" onclick="mostrarMas('producto1')">
+                    <h3>Camión Volquete</h3>
+                    <p><strong>Marca:</strong> Shacman</p>
+                    <p><strong>Modelo:</strong> X3000</p>
+                    <p><strong>Año:</strong> 2024 Nueva</p>
+                    <p><strong>Precio:</strong> Conversable</p>
+                    <p><strong>Configuración:</strong> 8x4</p>
+                    <p><strong>Precio:</strong> 120,000$</p>
+                    <button onclick="window.location.href='https://wa.me/961670446?text=Estoy interesado en el Volquete Marca Shacman Modelo X3000.'">Adquirir</button>
+                    <button onclick="mostrarMas('producto1')">Mostrar más</button>
+                </div>
+                <div class="producto" id="producto2">
+                    <img src="img/cargador/1.0.jpeg" alt="Excavadora Hidráulica Caterpillar 320D2" class="producto-img" onclick="mostrarMas('producto2')">
+                    <h3>Tracto Remolcador</h3>
+                    <p><strong>Marca:</strong> Scania</p>
+                    <p><strong>Modelo:</strong> G460</p>
+                    <p><strong>Año:</strong> 2013</p>
+                    <p><strong>Configuración:</strong> 6x4</p>
+                    <p><strong>Suspensión:</strong> Neumática</p>
+                    <p><strong>Precio:</strong> 58,000$</p>
+                    <button onclick="window.location.href='https://wa.me/961670446?text=Estoy interesado en el Tracto Remolcador Marca Scania Modelo G460 Año 2013.'">Adquirir</button>
+                    <button onclick="mostrarMas('producto2')">Mostrar más</button>
+                </div>
+                <div class="producto" id="producto3">
+                    <img src="img/remolcador/1.jpeg" alt="Retroexcavadora JCB 3CX ECO" class="producto-img" onclick="mostrarMas('producto3')">
+                    <h3>Tracto Remolcador</h3>
+                    <p><strong>Marca:</strong> Scania</p>
+                    <p><strong>Modelo:</strong> P450</p>
+                    <p><strong>Año:</strong> 2021</p>
+                    <p><strong>Configuración:</strong> 6x4 suspensión neumática llantas balón</p>
+                    <p><strong>Precio:</strong> 115,000$</p>
+                    <button onclick="window.location.href='https://wa.me/961670446?text=Estoy interesado en el Tracto Remolcador Marca Scania Modelo P450 Año 2021.'">Adquirir</button>
+                    <button onclick="mostrarMas('producto3')">Mostrar más</button>
+                </div>
+                <div class="producto" id="producto4">
+                    <img src="img/remolcador1/1.jpeg" alt="Retroexcavadora JCB 3CX ECO" class="producto-img" onclick="mostrarMas('producto4')">
+                    <h3>Tracto Remolcador</h3>
+                    <p><strong>Marca:</strong> Mack</p>
+                    <p><strong>Modelo:</strong> MP8</p>
+                    <p><strong>Año:</strong> 2010</p>
+                    <p><strong>Configuración:</strong> 6x4 suspensión neumática</p>
+                    <p><strong>Precio:</strong> 38,000$</p>
+                    <button onclick="window.location.href='https://wa.me/961670446?text=Estoy interesado en el Tracto Remolcador Marca Mack Modelo MP8 Año 2010.'">Adquirir</button>
+                    <button onclick="mostrarMas('producto4')">Mostrar más</button>
+                </div>
+                <div class="producto" id="producto5">
+                    <img src="img/volquete1/1.jpeg" alt="Volquete Volvo FMX480" class="producto-img" onclick="mostrarMas('producto5')">
+                    <h3>Volquete Volvo</h3>
+                    <p><strong>Marca:</strong> Volvo</p>
+                    <p><strong>Modelo:</strong> FMX480</p>
+                    <p><strong>Año:</strong> 2016</p>
+                    <p><strong>Configuración:</strong> 6x4 cubo solar tolva 17 mts3</p>
+                    <p><strong>Precio:</strong> 125,000$</p>
+                    <button onclick="window.location.href='https://wa.me/961670446?text=Estoy interesado en el Volquete Marca Volvo Modelo FMX480 Año 2016.'">Adquirir</button>
+                    <button onclick="mostrarMas('producto5')">Mostrar más</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p><strong>Teléfono:</strong> 961 670 446</p>
+                <p><strong>Dirección:</strong> Calle San Luis Mz G1 Lt 3 Urb Villa Maria Chorrillos</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Camiones y Maquinarias Hermanos Ventura.</p>
+        </div>
+    </footer>
+
+    <div id="product-images" style="display: none;">
+        <div class="container">
+            <h2>Imágenes del Producto</h2>
+            <div id="product-image-gallery"></div>
+            <button onclick="closeProductImages()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
